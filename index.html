@@ -4,12 +4,41 @@
     <link rel="stylesheet" type="text/css" href="jqm/jquery.mobile-1.2.0.css">
     <script type="text/javascript" src ="jquery.min.js"></script>
     <script type="text/javascript" src="jqm/jquery.mobile-1.2.0.js"></script>
-    <title>Index</title>
+    <title>InDeX</title>
 </head>
 <body>
-    <div data-role="page" data-theme="a">
-        
+
+
+<div data-role="page" id="pagina1">
+    <div data-role="header" data-theme="b" >
+        <h1>Home</h1>
     </div>
+    <div data-role="content" data-theme="b">
+        <a href="#pagina2" data-role="button" data-theme="c" >
+        ir a pagina 2
+        </a>
+    </div>
+    <div data-role="footer" data-theme="b">
+        <h2>esto es pie de pagina</h2>
+    </div>
+</div>
+
+
+
+<div data-role="page" id="pagina2" >
+    <div data-role="header" data-theme="b" >
+        <h1>pagina 2</h1>
+    </div>
+    <div data-role="content" data-theme="b" >
+        <a href="#pagina1" data-role="button">ir a pagina 1</a>
+    </div>
+    <div data-role="footer" data-theme="b">
+        <h2>esto es pie de pagina</h2>
+    </div>
+</div>
+
+
+
 
 </body>
 </html>
