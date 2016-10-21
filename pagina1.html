@@ -1,44 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="jqm/jquery.mobile-1.2.0.css">
-    <script type="text/javascript" src ="jquery.min.js"></script>
-    <script type="text/javascript" src="jqm/jquery.mobile-1.2.0.js"></script>
+    
     <title>InDeX</title>
 </head>
 <body>
+<!-- pagina 1-->
 
-
-<div data-role="page" id="pagina1">
-    <div data-role="header" data-theme="b" >
-        <h1>pagina 1</h1>
+<div data-role="page" id="pagina1" data-theme="a" >
+    <!--cabezera-->
+    <div data-role="header">
+        <a href="#Inicio">Inicio</a>
+        <h1>Pagina 1</h1>
+        
+        <a href="#Inicio">Inicio</a>
     </div>
-    <div data-role="content" data-theme="b">
-        <a href="pagina2.html" data-role="button" data-theme="c" data-transition="slide">
-        ir a pagina 2
+    <!-- contenido-->
+
+    <div data-role="content">
+        <a href="#confirmar" data-role="button" data-rel="dialog" data-theme="b" >eliminar</a>
+
+
+
+
+
+
+
+
+
+        <a href="botones.html" data-role="button" data-theme="e">
+            ir a botones
         </a>
     </div>
-    <div data-role="footer" data-theme="b">
-        <h2>esto es pie de pagina</h2>
+    <!--pie de pagina-->
+    <div data-role="footer">
+        <h2>esto es pie de pagina 1</h2>
     </div>
 </div>
 
 
 
-<div data-role="page" id="pagina2" >
-    <div data-role="header" data-theme="b" >
-        <h1>pagina 2</h1>
+<!-- Inicio-->
+
+<div data-role="page" id="Inicio" data-theme="a" >
+    <!--cabezera-->
+    <div data-role="header">
+        <a href="#pagina1">Inicio</a>
+        <h1>Home</h1>
     </div>
-    <div data-role="content" data-theme="b" >
-        <a href="#pagina1" data-role="button">ir a pagina 1</a>
+    <!-- contenido-->
+
+    <div data-role="content">
+        <p>Pagina de inicio</p>
     </div>
-    <div data-role="footer" data-theme="b">
-        <h2>esto es pie de pagina</h2>
+    <!--pie de pagina-->
+    <div data-role="footer">
+        <h2>josefuentesfsnz@gmail.com</h2>
     </div>
 </div>
 
 
 
 
+<!--dialogo -->
+
+<div data-role="page" id="confirmar" >
+    <div data-role="header">
+        <h1>Confirmar</h1>
+    </div>
+
+    <div data-role="content">
+        <p>Cuadro de dalogo</p>
+        <a href="#pagina1" data-role="button" data-rel="back" data-theme="e" >confirmar</a>
+        <a href="#pagina1" data-role="button" data-rel="back" data-theme="d" >cancelar</a>
+    </div>
+
+</div>
+
+
+    <link rel="stylesheet" type="text/css" href="jqm/jquery.mobile-1.2.0.css">
+    <script type="text/javascript" src ="jquery.min.js"></script>
+    <script type="text/javascript" src="jqm/jquery.mobile-1.2.0.js"></script>
 </body>
 </html>
